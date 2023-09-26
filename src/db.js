@@ -1,39 +1,45 @@
+const mongoose = require("mongoose");
 require("dotenv").config();
-const { Sequelize } = require("sequelize");
 
-const fs = require('fs');
-const path = require('path');
-const {
-  DB_USER, DB_PASSWORD, DB_HOST,
-} = process.env;
+const { MONGO_URI } = process.env;
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/countries`, {
-  logging: false, 
-  native: false, 
-});
-const basename = path.basename(__filename);
-
-const modelDefiners = [];
-
-fs.readdirSync(path.join(__dirname, '/models'))
-  .filter((file) => (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js'))
-  .forEach((file) => {
-    modelDefiners.push(require(path.join(__dirname, '/models', file)));
+try {
+  mongoose.connect(MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
   });
+} catch (error) {
+  console.error(error);
+}
+
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "Error de conexión a MongoDB:"));
+db.once("open", () => {
+  console.log("Conexión exitosa a MongoDB.");
+});
+
+const Schema = mongoose.Schema;
 
 
-modelDefiners.forEach(model => model(sequelize));
+const User = require("./models/User");
+const Event = require("./models/Event");
+const Ticket = require("./models/Ticket");
+const Review = require("./models/Review");
+const Cart = require("./models/Cart");
+const Place = require("./models/Place");
+const ServiceProvider = require("./models/ServiceProvider");
+const Category = require("./models/Category");
 
-let entries = Object.entries(sequelize.models);
-let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].slice(1), entry[1]]);
-sequelize.models = Object.fromEntries(capsEntries);
-
-const { Country } = sequelize.models;
-
-// Aca vendrian las relaciones
-// Product.hasMany(Reviews);
 
 module.exports = {
-  ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
-  conn: sequelize,     // para importart la conexión { conn } = require('./db.js');
+  User,
+  Event,
+  Ticket,
+  Review,
+  Cart,
+  Place,
+  ServiceProvider,
+  Category,
+  db,
 };
