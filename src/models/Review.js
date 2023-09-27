@@ -8,16 +8,18 @@ const reviewSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },
-  eventId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Event",
+  reviewedItemType: {
+    type: String,
+    enum: ["event", "serviceProvider"],
+    required: true,
   },
-  serviceProviderId: {
+  reviewedItemId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "ServiceProvider",
+    required: true,
   },
 });
 
 const Review = mongoose.model("Review", reviewSchema);
 
 module.exports = Review;
+
