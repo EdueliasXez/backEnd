@@ -17,6 +17,10 @@ const placeSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Event", 
   },
+  placeId: {  
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Place",
+  },
 });
 
 const Place = mongoose.model("Place", placeSchema);
