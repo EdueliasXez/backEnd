@@ -1,15 +1,10 @@
-const { User, ShippingAddress } = require('../../db.js');
+const { User} = require('../../db.js');
 
 async function getUserById(userId) {
   try {
     const user = await User.findOne({
       where: {
         id: userId, 
-      },
-      include: {
-        model: ShippingAddress,
-        as: 'shippingAddresses',
-        required: false,
       },
     });
 

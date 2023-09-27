@@ -1,4 +1,4 @@
-const { User, ShippingAddress } = require('../../db');
+const { User} = require('../../db');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const sgMail = require('../sendgridConfig'); 
@@ -7,17 +7,16 @@ require('dotenv').config();
 async function registerUser(req, res) {
   try {
     const { 
-      username, 
-      email, 
+      username,  
       firstName, 
       lastName, 
       birthdate,
-      password, 
-      isServiceProvider, 
+      email,
+      password,  
       wantsNotification, 
-      storeName, 
       googleProfile,
-      isAdmin
+      isAdmin,
+      isServiceProvider,
      } = req.body;
 
     const existingUser = await User.findOne({ where: { email } });
@@ -37,7 +36,6 @@ async function registerUser(req, res) {
       password: hashedPassword, 
       isServiceProvider,
       wantsNotification,
-      storeName: isServiceProvider ? storeName : null,
       isAdmin: isAdmin || false,
     });
 

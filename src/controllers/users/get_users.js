@@ -1,13 +1,8 @@
-const { User, ShippingAddress } = require('../../db.js');
+const { User} = require('../../db.js');
 
 async function getUsers() {
   try {
     const users = await User.findAll({
-      include: {
-        model: ShippingAddress,
-        as: 'shippingAddresses', 
-        required: false, 
-      },
     });
     return users;
   } catch (error) {
