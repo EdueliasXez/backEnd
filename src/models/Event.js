@@ -18,6 +18,10 @@ const eventSchema = new mongoose.Schema({
       ref: "Category",
     },
   ],
+  placeId: {  
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Place",
+  },
 });
 
 const Event = mongoose.model("Event", eventSchema);

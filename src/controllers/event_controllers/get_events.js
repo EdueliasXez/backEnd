@@ -1,8 +1,17 @@
-const { Event } = require('../../db'); 
+const { Event, Place, Category } = require('../../db');
 
 async function getEvents(req, res) {
   try {
-    const events = await Event.find(); 
+    const events = await Event.find()
+      .populate({
+        path: 'categories',
+        model: 'Category',
+      })
+      .populate({
+        path: 'placeId',
+        model: 'Place',
+      });
+
     res.json(events);
   } catch (error) {
     console.error('Error al obtener eventos:', error);
@@ -10,4 +19,4 @@ async function getEvents(req, res) {
   }
 }
 
-module.exports = getEvents
+module.exports = getEvents;
