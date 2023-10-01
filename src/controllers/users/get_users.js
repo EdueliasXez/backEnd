@@ -1,12 +1,12 @@
-const { User} = require('../../db.js');
+const {User} = require('../../db'); 
 
-async function getUsers() {
+async function getUsers(req, res) {
   try {
-    const users = await User.findAll({
-    });
-    return users;
+    const users = await User.find();
+    res.status(200).json(users);
   } catch (error) {
-    throw new Error('Error al obtener la lista de usuarios');
+    console.error('Error al obtener usuarios:', error);
+    res.status(500).json({ error: 'Error al obtener usuarios' });
   }
 }
 
