@@ -6,11 +6,12 @@ const eventSchema = new mongoose.Schema({
   price: Number,
   stock: Number,
   date: Date,
-  images: [String], 
+  images: [String],
   active: Boolean,
   serviceProviderId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User", 
+    default: "clickyTicket", 
   },
   categories: [
     {
@@ -18,7 +19,7 @@ const eventSchema = new mongoose.Schema({
       ref: "Category",
     },
   ],
-  placeId: {  
+  placeId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Place",
   },

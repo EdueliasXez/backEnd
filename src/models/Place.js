@@ -7,19 +7,16 @@ const placeSchema = new mongoose.Schema({
   postalCode: String,
   dateAndTime: {
     date: Date,
-    time: String, 
+    time: String,
   },
   serviceProviderId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "ServiceProvider", 
+    default: "clickyTicket", 
   },
   eventId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Event", 
-  },
-  placeId: {  
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Place",
+    ref: "Event",
   },
 });
 
