@@ -4,20 +4,6 @@ const { getUsers, registerUser, loginUser, getUsersById} = require('../controlle
 const { authenticateToken } = require('../middlewares/authMiddleware.js');
 
 userRouter.get('/', getUsers);
-  
-  userRouter.get('/:userId', async (req, res) => {
-    const userId = req.params.userId; 
-  
-    try {
-
-      const user = await getUsersById(userId);
-      res.status(200).json(user);
-    } catch (error) {
-      console.error('Error al obtener el usuario:', error);
-      res.status(500).json({ error: 'Error al obtener el usuario' });
-    }
-  });
-  
 
 userRouter.post('/register', registerUser);
 

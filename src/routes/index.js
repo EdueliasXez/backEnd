@@ -11,6 +11,10 @@ const router = Router();
 router.use('/events', events_router);
 router.use('/categories', categories_router);
 router.use('/review', reviews_router);
+router.use('/checkout', checkout_router);
+router.use('/user', users_router);
+router.use('/google', google_router);
+
 
 router.use((req, res, next) => {
     console.log('Ruta no encontrada:', req.originalUrl);
