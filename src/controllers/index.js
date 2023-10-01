@@ -23,11 +23,5 @@ module.exports = {
     removeEvent,
     getCategories,
     getReviews,
-    createReview,
-    createUser,
-    getUsersById,
-    getUsers,
-    loginUser,
-    registerUser,
-    createPayment
+    createReview
 }
