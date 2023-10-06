@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.1",
     "@sendgrid/mail": "^7.7.0",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
