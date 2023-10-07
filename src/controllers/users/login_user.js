@@ -14,6 +14,8 @@ async function loginUser(req, res) {
 
       const existingUser = await User.findOne({ where: { googleId: googleProfile.id } });
 
+      
+
       if (existingUser) {
         const accessToken = jwt.sign({ userId: existingUser.id }, process.env.SECRET_KEY, { expiresIn: '1h' });
         const refreshToken = jwt.sign({ userId: existingUser.id }, process.env.REFRESH_SECRET_KEY, { expiresIn: '7d' });
