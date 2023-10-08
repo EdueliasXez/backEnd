@@ -5,6 +5,8 @@ const { authenticateToken } = require('../middlewares/authMiddleware.js');
 
 userRouter.get('/', getUsers);
 
+userRouter.get('/:userId', getUsersById);
+
 userRouter.post('/register', registerUser);
 
 userRouter.post('/login', loginUser);

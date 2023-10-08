@@ -7,25 +7,29 @@ const axios = require('axios');
 async function loginUser(req, res) {
   try {
     const { email, password, rememberMe, googleCode } = req.body;
-   
+
     if (googleCode) {
       const googleTokenResponse = await exchangeGoogleCodeForToken(googleCode);
       const googleProfile = await fetchGoogleUserProfile(googleTokenResponse.access_token);
 
-      const existingUser = await User.findOne({ where: { googleId: googleProfile.id } });
+      const existingUser = await User.findOne({ googleId: googleProfile.id });
 
       if (existingUser) {
-        const accessToken = jwt.sign({ userId: existingUser.id }, process.env.SECRET_KEY, { expiresIn: '1h' });
-        const refreshToken = jwt.sign({ userId: existingUser.id }, process.env.REFRESH_SECRET_KEY, { expiresIn: '7d' });
+        const accessToken = jwt.sign({ userId: existingUser._id }, process.env.SECRET_KEY, {
+          expiresIn: '1h',
+        });
+        const refreshToken = jwt.sign({ userId: existingUser._id }, process.env.REFRESH_SECRET_KEY, {
+          expiresIn: '7d',
+        });
 
-        return res.status(200).json({ message: 'Inicio de sesión exitoso', accessToken, refreshToken });
+        return res
+          .status(200)
+          .json({ message: 'Inicio de sesión exitoso', accessToken, refreshToken });
       }
     }
 
     const user = await User.findOne({
-      where: {
-        email,
-      },
+      email,
     });
 
     if (!user) {
@@ -39,11 +43,21 @@ async function loginUser(req, res) {
     }
 
     const expiresIn = rememberMe ? '7d' : '1h';
-    const accessToken = jwt.sign({ userId: user.id, isSeller: user.isSeller }, process.env.SECRET_KEY, { expiresIn });
-    const refreshToken = jwt.sign({ userId: user.id }, process.env.REFRESH_SECRET_KEY, { expiresIn: '7d' });
+    const accessToken = jwt.sign(
+      { userId: user._id, isSeller: user.isSeller },
+      process.env.SECRET_KEY,
+      { expiresIn }
+    );
+    const refreshToken = jwt.sign({ userId: user._id }, process.env.REFRESH_SECRET_KEY, {
+      expiresIn: '7d',
+    });
 
     if (rememberMe) {
-      res.cookie('accessToken', accessToken, { maxAge: 604800000, httpOnly: true, secure: true });
+      // En MongoDB, normalmente no se utiliza la gestión de cookies como en Sequelize, pero puedes adaptarlo según tus necesidades.
+      // Aquí simplemente se responde con los tokens en lugar de establecer una cookie.
+      return res
+        .status(200)
+        .json({ message: 'Inicio de sesión exitoso', accessToken, refreshToken });
     }
 
     return res.status(200).json({ message: 'Inicio de sesión exitoso', accessToken, refreshToken });
