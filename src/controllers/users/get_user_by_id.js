@@ -1,20 +1,23 @@
-const { User} = require('../../db.js');
+const { User, ServiceProvider } = require('../../db');
 
-async function getUserById(userId) {
+async function getUserById(req, res) {
+  const userId = req.params.userId; 
   try {
-    const user = await User.findOne({
-      where: {
-        id: userId, 
-      },
-    });
+    const user = await User.findById(userId);
 
     if (!user) {
-      throw new Error('Usuario no encontrado'); 
+      return res.status(404).json({ error: 'Usuario no encontrado' });
     }
 
-    return user;
+    if (user.isServiceProvider) {
+      const serviceProviderInfo = await ServiceProvider.findOne({ userId: user._id });
+      return res.status(200).json({ ...user.toObject(), serviceProviderInfo });
+    }
+
+    res.status(200).json(user);
   } catch (error) {
-    throw new Error('Error al obtener el usuario por ID');
+    console.error('Error al obtener usuario por ID:', error);
+    res.status(500).json({ error: 'Error al obtener usuario por ID' });
   }
 }
 
