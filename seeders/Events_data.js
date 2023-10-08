@@ -9,7 +9,7 @@ const eventsData = [
         'https://res.cloudinary.com/dwwqyz3ux/image/upload/v1695848679/Events/Gatronom%C3%ADa/liz-pullan-pattathy-M4lY08ucZz8-unsplash_k5yx3k.jpg', 
         'https://res.cloudinary.com/dwwqyz3ux/image/upload/v1695848680/Events/Gatronom%C3%ADa/daniel-lee-GfVYwJUziVE-unsplash_glgnoo.jpg'],
         active: true,
-        categories: ['Gastronomía', 'Festivales'], 
+        categories: ['Gastronomía'], 
         placeData: {
           country: 'Argentina',
           city: 'Buenos Aires',
@@ -33,7 +33,7 @@ const eventsData = [
             'https://res.cloudinary.com/dwwqyz3ux/image/upload/v1695849029/Events/Eventos%20deportivos/photo-genius-I749-lKHHJ4-unsplash_ruabum.jpg'
         ],
         active: true,
-        categories: ['Salud y Bienestar', 'Eventos Deportivos'], 
+        categories: ['Eventos Deportivos'], 
         placeData: {
           country: 'México', 
           city: 'Tulum', 
@@ -58,7 +58,7 @@ const eventsData = [
             'https://res.cloudinary.com/dwwqyz3ux/image/upload/v1695849319/Events/Educaci%C3%B3n/phil-goodwin-gWrxqChFf1Y-unsplash_gy6wcc.jpg'
         ],
         active: true,
-        categories: ['Educación', 'Eventos Familiares'], 
+        categories: ['Exposiciones de Arte'], 
         placeData: {
           country: 'Perú', 
           city: 'Lima', 
@@ -82,7 +82,7 @@ const eventsData = [
           'https://media.es.wired.com/photos/650337a9a678a8681335ad55/16:9/w_2560%2Cc_limit/telescopio%2520en%2520la%2520luna%2520futuro.jpg'
         ],
         active: true,
-        categories: ['Ciencia y Tecnología', 'Eventos Familiares'], 
+        categories: ['Ciencia y Tecnología'], 
         placeData: {
           country: 'Chile', 
           city: 'Valparaiso', 
@@ -106,7 +106,7 @@ const eventsData = [
           'https://www.operaactual.com/wp-content/uploads/2020/03/traviata-operaactual-met--e1584960023979.jpg'
         ],
         active: true,
-        categories: ['Artes Escénicas'], 
+        categories: ['Exposiciones de Arte'], 
         placeData: {
           country: 'Argentina', 
           city: 'Buenos Aires', 
@@ -154,7 +154,7 @@ const eventsData = [
           'https://img.chilango.com/2023/08/festival-gastronomico-sabores-y-artesanias-de-mexico.jpg'
         ],
         active: true,
-        categories: ['Gastronomía', 'Eventos Familiares'], 
+        categories: ['Gastronomía'], 
         placeData: {
           country: 'México', 
           city: 'Ciudad de México', 
@@ -250,7 +250,7 @@ const eventsData = [
           'https://c8.alamy.com/compes/e3yawj/metallica-actua-en-el-festival-de-musica-de-glastonbury-inglaterra-el-sabado-28-de-junio-de-2014-e3yawj.jpg'
         ],
         active: true,
-        categories: ['Música, Conciertos'], 
+        categories: ['Conciertos'], 
         placeData: {
           country: 'México',
           city: 'Ciudad de México',
@@ -274,7 +274,7 @@ const eventsData = [
           'https://www.diarioronda.es/wp-content/uploads/2016/10/hanlet2.jpg'
         ],
         active: true,
-        categories: ['Teatro, Artes escénicas'], 
+        categories: ['Artes escénicas'], 
         placeData: {
           country: 'México',
           city: 'Ciudad de México',
@@ -298,7 +298,7 @@ const eventsData = [
           'https://www.elsoldehidalgo.com.mx/local/regional/kjazby-cineterror03-1_cmyk.jpg/ALTERNATES/LANDSCAPE_1140/CINETERROR03%20(1)_CMYK.jpg'
         ],
         active: true,
-        categories: ['Cine, Cultura'], 
+        categories: ['Cine y Entretenimiento'], 
         placeData: {
           country: 'México',
           city: 'Ciudad de México',
@@ -322,7 +322,7 @@ const eventsData = [
           'https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradiolos40/XTIUGWR5CBMNPOCADAGTCNH26M.jpg'
         ],
         active: true,
-        categories: ['Música'], 
+        categories: ['Conciertos'], 
         placeData: {
           country: 'Costa Rico',
           city: 'Puntarenas',
@@ -346,7 +346,7 @@ const eventsData = [
           'https://poble-espanyol.com/wp-content/uploads/2023/01/Poble-Espanyol-Exposicion-barcelona.jpg'
         ],
         active: true,
-        categories: ['Arte'], 
+        categories: ['Artes Escénicas'], 
         placeData: {
           country: 'Argentina',
           city: 'Buenos Aires',
@@ -370,7 +370,7 @@ const eventsData = [
           'https://tiposdearte.com/wp-content/uploads/2015/03/Arte-vanguardista.jpg'
         ],
         active: true,
-        categories: ['Arte','Exposición'], 
+        categories: ['Exposiciones de Arte'], 
         placeData: {
           country: 'Republica Dominicana',
           city: 'Puerto Plata',
@@ -394,7 +394,7 @@ const eventsData = [
           'https://lasillarota.com/u/fotografias/m/2023/8/25/f638x638-481650_539817_5050.jpg'
         ],
         active: true,
-        categories: ['Gastronomía','Vino'], 
+        categories: ['Gastronomía'], 
         placeData: {
           country: 'Chile',
           city: 'Santiago',
@@ -412,13 +412,13 @@ const eventsData = [
         price: 45.00,
         stock: 60,
         date: new Date('2023-10-18T20:30:00Z'),
-        images: ['/images/event10.jpg'],
-        active: true,
-        categories: [
+        images: [
           'https://www.rocknvivo.com/wp-content/uploads/2009/08/dorso-leyendas.jpg',
           'https://elperiodicodevillena.com/wp-content/uploads/2022/08/Opeth.jpg',
           'https://www.rockculture.es/wp-content/uploads/2023/08/bullet-for-my-valentine-rc-7526-1.jpg'
-        ], 
+        ],
+        active: true,
+        categories: ['Conciertos'], 
         placeData: {
           country: ' Argentina',
           city: 'Buenos Aires',
@@ -442,7 +442,7 @@ const eventsData = [
           'https://funglode.org/wp-content/uploads/2023/01/portada-festival-Cine2.jpg'
         ],
         active: true,
-        categories: ['Cine', 'Festival'], 
+        categories: ['Cine y Entretenimiento'], 
         placeData: {
           country: 'España',
           city: 'Madrid',
@@ -466,7 +466,7 @@ const eventsData = [
           'https://itti.es/wp-content/uploads/2022/11/pexels-rodnae-productions-7915493.jpg'
         ],
         active: true,
-        categories: ['Deportes'], 
+        categories: ['Eventos Deportivos'], 
         placeData: {
           country: 'Guatemala',
           city: 'Ciudad de Guatemala',
@@ -490,7 +490,7 @@ const eventsData = [
           'https://i.ytimg.com/vi/1XnxErwDROA/hqdefault.jpg'
         ],
         active: true,
-        categories: ['Música'], 
+        categories: ['Conciertos'], 
         placeData: {
           country: 'Colombia',
           city: 'Bogota',
@@ -514,7 +514,7 @@ const eventsData = [
           'https://img.vavel.com/copia-de-qatar-16-1694812328408.jpg'
         ],
         active: true,
-        categories: ['Deportes, Fútbol'], 
+        categories: ['Eventos Deportivos'], 
         placeData: {
           country: ' México',
           city: 'Ciudad de México',
@@ -538,7 +538,7 @@ const eventsData = [
           'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/FLGCSCQWPNEYHLIG4HW6ENIJNI.jpg'
         ],
         active: true,
-        categories: ['Entretenimiento'], 
+        categories: ['Eventos Familiares'], 
         placeData: {
           country: 'Argentina',
           city: 'Posadas',
@@ -562,7 +562,7 @@ const eventsData = [
           'https://www.neurita.com/wp-content/uploads/2022/04/La-importancia-de-las-fiestas-infantiles-segun-la-psicologia.jpg'
         ],
         active: true,
-        categories: ['Música'], 
+        categories: ['Eventos Familiares'], 
         placeData: {
           country: 'Argentina',
           city: 'Buenos Aires',
@@ -586,7 +586,7 @@ const eventsData = [
           'https://cdnvos.lavoz.com.ar/sites/default/files/styles/width_1072/public/agenda/cuentosycan_1689269426.jpg'
         ],
         active: true,
-        categories: ['Teatro'], 
+        categories: ['Artes Escénicas'], 
         placeData: {
           country: 'Perú',
           city: 'Lima',
@@ -610,7 +610,7 @@ const eventsData = [
           'https://www.innovaspain.com/wp-content/uploads/2016/05/detallejdld.jpg'
         ],
         active: true,
-        categories: ['Arte'], 
+        categories: ['Exposiciones de Arte'], 
         placeData: {
           country: 'Chile',
           city: 'Santiago',
@@ -658,7 +658,7 @@ const eventsData = [
           'https://2.bp.blogspot.com/-D4al_sCWpdw/TzaySb7Yu9I/AAAAAAAAAAM/uBvHpUxChJU/s1600/Arte-surrealista1.jpg'
         ],
         active: true,
-        categories: [' Arte, Historia'], 
+        categories: ['Exposiciones de Arte'], 
         placeData: {
           country: 'Argentina',
           city: 'Córdoba',
@@ -682,7 +682,7 @@ const eventsData = [
           'https://frenchdistrict.com/californie-sud/wp-content/uploads/sites/5/2016/04/san-diego-comic-con.jpg'
         ],
         active: true,
-        categories: ['Cómics, Cultura pop'], 
+        categories: ['Ferias Locales'], 
         placeData: {
           country: 'Argentina',
           city: 'Buenos Aires',
@@ -706,7 +706,7 @@ const eventsData = [
           'https://labritany.com/wp-content/uploads/2023/01/Picsart_23-01-13_20-36-19-591-scaled.jpg'
         ],
         active: true,
-        categories: ['Deportes'], 
+        categories: ['Eventos Deportivos'], 
         placeData: {
           country: 'Costa Rica',
           city: 'Tamarindo',
@@ -730,7 +730,7 @@ const eventsData = [
           'https://images.squarespace-cdn.com/content/v1/5a7cc1fc914e6b8d66356864/1584910150796-YDIUYQ2GG37J1G5JYPMF/Madison_NIC-1.jpg'
         ],
         active: true,
-        categories: ['Deportes'], 
+        categories: ['Eventos Deportivos'], 
         placeData: {
           country: 'México',
           city: 'Cancún',
@@ -754,7 +754,7 @@ const eventsData = [
           'https://carreraspormontana.com/images/2014/01/130728-su-kilianemelie_dsc0197.jpg'
         ],
         active: true,
-        categories: ['Deportes'], 
+        categories: ['Eventos Deportivos'], 
         placeData: {
           country: 'Argentina',
           city: 'San Carlos de Bariloche',
@@ -779,7 +779,7 @@ const eventsData = [
 
         ],
         active: true,
-        categories: ['Deportes'], 
+        categories: ['Eventos Deportivos'], 
         placeData: {
           country: 'Chile',
           city: 'Iquique',
@@ -803,7 +803,7 @@ const eventsData = [
           'https://www.youredm.com/wp-content/uploads/2019/07/190721-174659-TML2019-Rudgrcom-AA7I1056.jpg'
         ],
         active: true,
-        categories: ['Música'], 
+        categories: ['Festivales'], 
         placeData: {
           country: 'Colombia',
           city: 'Medellin',
@@ -827,7 +827,7 @@ const eventsData = [
           'https://socialestrespuntocero.mx/wp-content/uploads/2023/06/Jazz.jpg'
         ],
         active: true,
-        categories: ['Música'], 
+        categories: ['Cine y Entretenimiento'], 
         placeData: {
           country: 'Argentina',
           city: 'Buenos Aires',
@@ -851,7 +851,7 @@ const eventsData = [
           'https://images.neventum.com/posts/2015/277/thumb1024/aFIAL-MADRID-STANDS.jpg'
         ],
         active: true,
-        categories: ['Música'], 
+        categories: ['Ferias Locales'], 
         placeData: {
           country: 'Colombia',
           city: 'Bucaramanga',
@@ -875,7 +875,7 @@ const eventsData = [
           'https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2017/04/21/1331854682259_2/los-fans-a%C3%B1aden-otra-dimensi%C3%B3n-al-rally-argentina.jpg'
         ],
         active: true,
-        categories: ['Deportes'], 
+        categories: ['Ferias Locales'], 
         placeData: {
           country: 'Argentina',
           city: 'Mendoza',
@@ -899,7 +899,7 @@ const eventsData = [
           'https://elcomercio.pe/resizer/McXkpGcGdXakAM8UNGbr7NnQsI0=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/PBG4RBRTORCD3DYYN3P3WPNT2Y.jpg'
         ],
         active: true,
-        categories: ['Deportes'], 
+        categories: ['Eventos Deportivos'], 
         placeData: {
           country: 'Brasil',
           city: 'Sao Paulo',
@@ -923,7 +923,7 @@ const eventsData = [
           'https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1300/v1637054088/xcmsi9pnmvbk41qjk3xp.jpg'
         ],
         active: true,
-        categories: ['Cultura'], 
+        categories: ['Eventos Familiartes'], 
         placeData: {
           country: 'Colombia',
           city: 'Cali',
@@ -947,7 +947,7 @@ const eventsData = [
           'https://sevilla-b4f9.kxcdn.com/wp-content/uploads/2014/04/teatro-titeres-atalayaTNT-aseismanos-sevillaconlospeques.jpg'
         ],
         active: true,
-        categories: ['Arte, Historia'], 
+        categories: ['Comedia'], 
         placeData: {
           country: 'Colombia',
           city: 'Bogotá',
@@ -971,7 +971,7 @@ const eventsData = [
             'https://www.eluniversal.com.co/sites/default/files/30B2VANVAN.jpg'
         ],
         active: true,
-        categories: ['Música', 'Entretenimiento'], 
+        categories: ['Conciertos'], 
         placeData: {
           country: 'República Dominicana',
           city: 'Santo Domingo',
@@ -995,7 +995,7 @@ const eventsData = [
             'https://laguiacultural.com/wp-content/uploads/elementor/thumbs/Marthalicia-Matarrita-pdqa5s4nu4k7ch6irkijd3g6vyxmq1dnpe6e5uv7f0.jpg'
         ],
         active: true,
-        categories: ['Arte', 'Cultura'], 
+        categories: ['Artes Escénicas'], 
         placeData: {
           country: 'México',
           city: 'Ciudad de México',
@@ -1017,10 +1017,9 @@ const eventsData = [
             'https://bogota.gov.co/sites/default/files/styles/1050px/public/eventos/2023-03/gabo-en-bogota-2023-03-30t165414.511.jpg',
             'https://bellasartes.edu.co/festivalruquitavelasco/wp-content/uploads/2020/09/amayacu03.jpg',
             'https://www.leoncultural.com/wp-content/uploads/2017/01/El-libro-de-la-selva.jpg'
-
         ],
         active: true,
-        categories: [' Aventura, Familia'], 
+        categories: ['Ferias Locales'], 
         placeData: {
           country: 'Colombia',
           city: 'Medellín',
@@ -1044,7 +1043,7 @@ const eventsData = [
             'https://www.guatemala.com/fotos/2019/04/Taller-de-cocina-para-aprender-a-preparar-sushi-885x500.jpg'
         ],
         active: true,
-        categories: ['Gastronomía, Talleres'], 
+        categories: ['Festivales'], 
         placeData: {
           country: 'Colombia',
           city: 'Medellín',
@@ -1068,7 +1067,7 @@ const eventsData = [
             'https://www.carsceneinternational.com/wp-content/uploads/2021/09/VI.jpg'
         ],
         active: true,
-        categories: ['Deportes, Motor'], 
+        categories: ['Ferias Locales'], 
         placeData: {
           country: 'Colombia',
           city: 'Cali',
@@ -1092,7 +1091,7 @@ const eventsData = [
             'https://s1.ppllstatics.com/hoy/www/multimedia/202112/23/media/gal-motopapel/17.jpg'
         ],
         active: true,
-        categories: ['Concursos, Aventura'], 
+        categories: ['Cine y Entretenimiento'], 
         placeData: {
           country: 'Colombia',
           city: 'Bogotá',
@@ -1116,7 +1115,7 @@ const eventsData = [
             'https://i.ytimg.com/vi/HWJXVzRL-80/maxresdefault.jpg'
         ],
         active: true,
-        categories: [' Concursos, Educación'], 
+        categories: ['Cine y Entretenimiento'], 
         placeData: {
           country: 'Colombia',
           city: 'Bogotá',
@@ -1140,7 +1139,7 @@ const eventsData = [
             'https://leadingperutravel.com/wp-content/uploads/quebrada_yanallpa1_size.jpg'
         ],
         active: true,
-        categories: ['Concursos, Aventura'], 
+        categories: ['Cine y Entretenimiento'], 
         placeData: {
           country: 'Argentina',
           city: 'Posadas',
@@ -1164,7 +1163,7 @@ const eventsData = [
             'https://spanish.korea.net/upload/content/editImage/Nordic_Skiing_First_Bronze_medal_02.jpg'
         ],
         active: true,
-        categories: ['Concursos, Aventura'], 
+        categories: ['Cine y Entretenimiento'], 
         placeData: {
           country: 'Ecuador',
           city: 'Ibarra',
@@ -1188,7 +1187,7 @@ const eventsData = [
             'https://assets.entrepreneur.com/content/3x2/2000/1671204220-GettyImages-1348969735.jpg'
         ],
         active: true,
-        categories: ['Concursos, Emprendimiento'], 
+        categories: ['Negocios y Emprendimiento'], 
         placeData: {
           country: 'Argentina',
           city: 'Posadas',
@@ -1200,6 +1199,488 @@ const eventsData = [
           },
         },
       },
+      {
+        title: 'Noche de la Moda Vanguardista',
+        summary: 'Una experiencia única que presenta las últimas tendencias en moda de diseñadores emergentes. Ven y sé testigo de la creatividad y la innovación en la pasarela mientras los nuevos talentos de la moda comparten sus creaciones vanguardistas.',
+        price: 75.00,
+        stock: 500,
+        date: new Date('2024-01-18T20:30:00Z'),
+        images: [
+            'https://1.bp.blogspot.com/-SWAAhclUSOE/YC-0sjN9TbI/AAAAAAAAG6k/f9svyVj6PicUCNAB9g793-ndOp9QD1DLgCLcBGAsYHQ/s1280/vanguardista.jpg',
+            'https://i.blogs.es/7c36c3/elie-saab-53-/450_1000.jpg',
+            'https://i.pinimg.com/236x/06/37/15/06371561b91e7a9997b0e3d73ad180cd.jpg'
+        ],
+        active: true,
+        categories: ['Moda'], 
+        placeData: {
+          country: 'Colombia',
+          city: 'Medellin',
+          direction: 'Centro de Convenciones Medellin',
+          postalCode: '10720',
+          dateAndTime: {
+            date: new Date('2024-01-18T20:30:00Z'),
+            time: '2:40 PM',
+          },
+        },
+      },
+      {
+        title: 'Taller de Estilismo y Tendencias',
+        summary: 'Aprende los secretos detrás del estilo y las tendencias de la moda de la mano de expertos en el campo. Este taller te ayudará a definir tu propio estilo y a mantenerte actualizado con las últimas tendencias de moda',
+        price: 80.00,
+        stock: 100,
+        date: new Date('2024-02-18T20:30:00Z'),
+        images: [
+            'https://thumbs.dreamstime.com/z/taller-de-t%C3%A9cnicas-peluquer%C3%ADa-rostov-don-rusia-febrero-en-el-stand-la-empresa-cadiveu-exposici%C3%B3n-industria-belleza-y-moda-161454622.jpg',
+            'https://aws.condenastcollege.es/prod/designs/v1/assets/5760x3840/273.jpg',
+            'https://preciosa.top/imagenes/los-5-mejores-ciclos-formativos-de-grado-medio-de-estetica-y-belleza.jpg'
+        ],
+        active: true,
+        categories: ['Educación'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: 'Escuela de Diseño de Moda',
+          postalCode: '45710',
+          dateAndTime: {
+            date: new Date('2024-02-18T20:30:00Z'),
+            time: '10:00 AM',
+          },
+        },
+      },
+      {
+        title: 'Conferencia de Innovación Educativa',
+        summary: 'Explora las últimas tendencias en innovación educativa en esta conferencia. Escucha a expertos en el campo discutir nuevas metodologías, tecnologías y enfoques para la enseñanza y el aprendizaje del siglo XXI.',
+        price: 700.00,
+        stock: 100,
+        date: new Date('2023-11-18T20:30:00Z'),
+        images: [
+            'https://www.infobae.com/new-resizer/T-6qNQreo261YoSGNU_OuUC8dek=/1440x1440/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/M6WEGNL735EBREKV6ECK2HACCM.jpg',
+            'https://www.uc.cl/site/assets/files/18310/escenario_panellatriada_ciie2023222.700x532.jpg',
+            'https://innovacioneducativa.upc.edu.pe/wp-content/uploads/2023/01/20230116_115704-1024x572.jpg'
+        ],
+        active: true,
+        categories: ['Educación'], 
+        placeData: {
+          country: 'Colombia',
+          city: 'Bogota',
+          direction: 'Centro de Convenciones Educativas',
+          postalCode: '17310',
+          dateAndTime: {
+            date: new Date('2023-11-18T20:30:00Z'),
+            time: '8:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Curso de Desarrollo de Habilidades Digitales',
+        summary: 'Aprende habilidades digitales esenciales en este curso intensivo. Desde programación hasta diseño gráfico, este curso te ayudará a adquirir las habilidades necesarias para el mercado laboral actual.',
+        price: 700.00,
+        stock: 100,
+        date: new Date('2024-06-18T20:30:00Z'),
+        images: [
+            'https://www.comunicandonoticias.com/wp-content/uploads/2021/04/IMG-20210429-WA0081.jpg',
+            'https://impulso06.com/wp-content/uploads/2022/09/competencias-digitales.jpg',
+            'https://www.obsbusiness.school/sites/obsbusiness.school/files/images/blog_obs_tendencias_e_innovacion_competenciasdigitales_g.purita.jpg'
+        ],
+        active: true,
+        categories: ['Ciencia y Tecología'], 
+        placeData: {
+          country: 'Colombia',
+          city: 'Barranquilla',
+          direction: 'Centro de Capacitación Tecnológica',
+          postalCode: '30750',
+          dateAndTime: {
+            date: new Date('2024-06-18T20:30:00Z'),
+            time: '7:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Feria de Energías Renovables',
+        summary: 'Explora las últimas tecnologías y tendencias en energías renovables en esta feria. Descubre cómo la energía solar, eólica y otras fuentes sostenibles están transformando el futuro energético',
+        price: 100.00,
+        stock: 100,
+        date: new Date('2023-10-18T20:30:00Z'),
+        images: [
+            'https://www.excelenciascuba.com/sites/default/files/sites/default/files/cuba/imagenes_noticias/nota-62fileminimizer.jpg',
+            'https://pansogal.com//wp-content/uploads/2020/03/1.jpg',
+            'https://sunandplug.com/wp-content/uploads/2021/11/hero-genera-letras.jpg'
+        ],
+        active: true,
+        categories: ['Ecología y Sostenibilidad'], 
+        placeData: {
+          country: 'Republica Dominicana',
+          city: 'Santo Domingo',
+          direction: 'Centro de Capacitación Tecnológica',
+          postalCode: '16610',
+          dateAndTime: {
+            date: new Date('2023-10-18T20:30:00Z'),
+            time: '7:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Taller de Agricultura Orgánica',
+        summary: 'Aprende las prácticas de la agricultura orgánica y cómo puedes cultivar alimentos de manera sostenible y respetuosa con el medio ambiente. Este taller es ideal para entusiastas de la jardinería y agricultores principiantes.',
+        price: 160.00,
+        stock: 300,
+        date: new Date('2024-08-18T20:30:00Z'),
+        images: [
+            'https://upload.wikimedia.org/wikipedia/commons/d/d0/Taller_Agricultura_Organica_Jard%C3%ADn_Bot%C3%A1nico_CICEANA.jpg',
+            'https://www.sitopia.mx/wp-content/uploads/2020/06/taller-huerto-urbano.jpg',
+            'https://ladiversiva.com/wp-content/uploads/2019/12/taller_agricultura_termica.jpg'
+        ],
+        active: true,
+        categories: ['Ecología y Sostenibilidad'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: 'Granja Orgánica Verde',
+          postalCode: '15910',
+          dateAndTime: {
+            date: new Date('2024-08-18T20:30:00Z'),
+            time: '9:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Debate de Candidatos Locales',
+        summary: 'Participa en un debate en vivo con los candidatos locales para las próximas elecciones municipales. Esta es tu oportunidad para conocer sus propuestas y hacer preguntas directas sobre los temas que más te importan.',
+        price: 190.00,
+        stock: 100,
+        date: new Date('2024-04-18T20:30:00Z'),
+        images: [
+            'https://www.semana.com/resizer/YIAtbytwdT-hKx2FCCzIHoYtxhs=/480x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/G6HSUUCZFJBXZEPZ4KUSXDTPLI.jpg',
+            'https://www.eluniversal.com.co/binrepository/1200x800/0c0/0d0/none/13704/RHSW/debate-de-candidatos-a-la-alcaldia-de-cartagena-2023_8573642_20230926194408.jpg',
+            'https://media.diariolasamericas.com/p/8d9224c3ab69d6aca0191f51f22d5f88/adjuntos/216/imagenes/100/076/0100076381/855x0/smart/debate-republicano-afp.jpg'
+        ],
+        active: true,
+        categories: ['Debate y Politica'], 
+        placeData: {
+          country: 'Colombia',
+          city: 'Bogota',
+          direction: 'Centro Cívico Municipal',
+          postalCode: '22710',
+          dateAndTime: {
+            date: new Date('2024-04-18T20:30:00Z'),
+            time: '9:30 PM',
+          },
+        },
+      },
+      {
+        title: 'Conferencia sobre Política y Cambio Social',
+        summary: 'Únete a esta conferencia donde destacados expertos en política discutirán el papel de la política en el cambio social. Analizaremos los desafíos actuales y las oportunidades para crear un mundo más justo y equitativo.',
+        price: 100.00,
+        stock: 900,
+        date: new Date('2023-12-18T20:30:00Z'),
+        images: [
+            'https://elearning.unisabana.edu.co/fileadmin/media/Titulaciones/Diplomado_en_Politica_Publica_y_Liderazgo_Regional/diplomado-politica-publica-unisabana-e-learning-universidad-de-la-sabana.jpg',
+            'https://upload.wikimedia.org/wikipedia/commons/6/64/Conferencia_Valor_y_Vigencia_de_Pol%C3%ADticas_de_Estado_%2Cpara_enfrentar_el_cambio_Clim%C3%A1tico_promoviendo_Desarrollo_Sostenible_y_Regenerativo_con_participaci%C3%B3n_Ciudadana._%2824920953730%29.jpg',
+            'https://www.gaceta.unam.mx/wp-content/uploads/2022/11/221124-Dep1-des-f1-Congreso-Deportivo.jpg'
+        ],
+        active: true,
+        categories: ['Debate y Politica'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: 'Centro de Convenciones Políticas',
+          postalCode: '15200',
+          dateAndTime: {
+            date: new Date('2023-11-18T20:30:00Z'),
+            time: '8:00 PM',
+          },
+        },
+      },
+      {
+        title: 'Cumbre de Educación Online',
+        summary: 'Únete a expertos en educación en línea de todo el mundo en esta cumbre virtual. Explora las mejores prácticas, estrategias de enseñanza en línea y tecnologías emergentes para la educación a distancia',
+        price: 600.00,
+        stock: 100,
+        date: new Date('2023-10-18T20:30:00Z'),
+        images: [
+            'https://www.abiztar.com.mx/articulos/imagenes/u-learning.jpg',
+            'https://www.semana.com/resizer/TUMt-ZBFxSi2_9Z_3Tu4xLAvZsk=/arc-anglerfish-arc2-prod-semana/public/BMDVXFTY2JAETHBQPSMN2VKFGQ.jpg',
+            'https://cloudfront-us-east-1.images.arcpublishing.com/semana/DVQFL36IHFC7BKQAH5E2VIUIFA.jpg'
+        ],
+        active: true,
+        categories: ['Educación'], 
+        placeData: {
+          country: 'Mexico',
+          city: 'Guadalajara',
+          direction: 'Evento en línea',
+          postalCode: '19830',
+          dateAndTime: {
+            date: new Date('2023-10-18T20:30:00Z'),
+            time: '7:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Conferencia de Inteligencia Artificial',
+        summary: 'Explora el emocionante mundo de la inteligencia artificial en esta conferencia. Expertos en IA compartirán sus conocimientos sobre aprendizaje automático, redes neuronales y aplicaciones prácticas en diversas industrias.',
+        price: 75.00,
+        stock: 900,
+        date: new Date('2024-02-18T20:30:00Z'),
+        images: [
+            'https://icontinental.edu.pe/wp-content/uploads/2023/06/lanzamiento-programa.jpg',
+            'https://clickeducacion.com/wp-content/uploads/2020/12/Desventajas-de-la-inteligencia-artificial-en-la-educaci%C3%B3n-1280x720.jpg',
+            'https://gestion.pe/resizer/QoHhBSCYELniNCUdf4V2atQ6axg=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/CJ7R562Y45GNXFJAWGOUS3NRYI.jpg'
+        ],
+        active: true,
+        categories: ['Ciencia y Tecnología'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: 'Centro de Convenciones Tecnológicas',
+          postalCode: '13730',
+          dateAndTime: {
+            date: new Date('2024-02-18T20:30:00Z'),
+            time: '5:30 PM',
+          },
+        },
+      },
+      {
+        title: 'Taller de Robótica Avanzada',
+        summary: 'Sumérgete en el mundo de la robótica en este taller práctico. Aprende a programar robots avanzados y explora la automatización y la inteligencia artificial en la robótica moderna.',
+        price: 90.00,
+        stock: 100,
+        date: new Date('2023-11-18T20:30:00Z'),
+        images: [
+            'https://camptecnologico.com/wp-content/uploads/2014/02/ev3-1.jpg',
+            'https://www.tekniker.es/media/uploads/soluciones/ST_AutomatizacionRobotica_808x450px_icono.jpg',
+            'https://c8.alamy.com/compes/2ab8k9f/uso-de-la-robotica-flexible-en-procesos-de-fabricacion-industrial-robot-movil-unidad-de-fabricacion-avanzada-centro-tecnologico-tecnalia-research-2ab8k9f.jpg'
+        ],
+        active: true,
+        categories: ['Ciencia y Tecnología'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: 'Centro de Investigación Tecnológica',
+          postalCode: '15338',
+          dateAndTime: {
+            date: new Date('2023-11-18T20:30:00Z'),
+            time: '9:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Hackatón de Innovación Tecnológica',
+        summary: 'Participa en un emocionante hackatón de 48 horas donde equipos compiten para desarrollar soluciones tecnológicas innovadoras. Desafíate a ti mismo y colabora con otros apasionados por la tecnología.',
+        price: 50.00,
+        stock: 900,
+        date: new Date('2023-11-18T20:30:00Z'),
+        images: [
+           'https://www.expotextilperu.com/wp-content/uploads/shutterstock_2257190487-1-768x512.jpg',
+           'https://news.microsoft.com/wp-content/uploads/prod/sites/41/2022/05/Hackathon.jpg',
+           'https://cdn-3.expansion.mx/dims4/default/11c632d/2147483647/strip/true/crop/1342x782+0+0/resize/1800x1049!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F06%2F32%2F4bf2ec0446fd8ec20df8821575d9%2Fciencia-tecnologia-salud.jpg' 
+        ],
+        active: true,
+        categories: ['Ciencia y Tecnología'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: ' Centro de Innovación Tecnológica',
+          postalCode: '13390',
+          dateAndTime: {
+            date: new Date('2023-11-18T20:30:00Z'),
+            time: '10:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Conferencia de Exploración Espacial',
+        summary: 'Embárcate en un viaje a las estrellas en esta conferencia sobre exploración espacial. Astronautas y científicos espaciales compartirán sus experiencias y descubrimientos en la exploración del cosmos',
+        price: 45.00,
+        stock: 600,
+        date: new Date('2023-12-18T20:30:00Z'),
+        images: [
+            'https://www.etsi.us.es/sites/default/files/agenda/2022-11/Conferencia-Futuro-de-la-nasa-00-ETSi.jpg',
+            'https://upload.wikimedia.org/wikipedia/commons/9/98/EdWhiteFirstAmericanSpacewalker.1965.ws.jpg',
+            'https://www.thelivingmoon.com/49ufo_files/04images/General/claudie_haignere.jpg'
+        ],
+        active: true,
+        categories: ['Ciencia y Tecnología'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: ' Centro Espacial Johnson',
+          postalCode: '15727',
+          dateAndTime: {
+            date: new Date('2023-12-18T20:30:00Z'),
+            time: '6:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Desfile de Moda Primavera/Verano',
+        summary: 'Únete a nosotros para presenciar el glamour y la elegancia de la moda primavera/verano en un desfile exclusivo. Diseñadores de renombre presentarán sus últimas creaciones en una pasarela de lujo.',
+        price: 85.00,
+        stock: 900,
+        date: new Date('2023-12-18T20:30:00Z'),
+        images: [
+            'https://www.dior.com/couture/var/dior/storage/images/folder-media/folder-videos/folder-defiles/folder-defile-haute-couture-printemps-ete-2023/dior_women_hc_ss23show_finalvideo/39434251-1-fre-FR/dior_women_hc_ss23show_finalvideo.jpg',
+            'https://es.rollingstone.com/wp-content/uploads/2022/10/La-temporada-primavera-verano-2023-en-momentos-9.jpg',
+            'https://phantom-telva.unidadeditorial.es/4f674059ebabfc2fffbe14a82117035e/resize/828/f/jpg/assets/multimedia/imagenes/2022/01/24/16430411284922.jpg'
+        ],
+        active: true,
+        categories: ['Moda'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: 'Espacio de Eventos Elegante',
+          postalCode: '12857',
+          dateAndTime: {
+            date: new Date('2023-12-18T20:30:00Z'),
+            time: '6:30 PM',
+          },
+        },
+      },
+      {
+        title: 'Taller de Maquillaje de Celebridades',
+        summary: 'Aprende los secretos del maquillaje de celebridades en este taller exclusivo. Maquilladores profesionales te enseñarán las técnicas utilizadas en las alfombras rojas y las portadas de revistas.',
+        price: 95.00,
+        stock: 800,
+        date: new Date('2023-11-18T20:30:00Z'),
+        images: [
+            'https://makia.la/wp-content/uploads/2018/03/maquillaje-contour-paso-a-paso-1-850x622.jpg',
+            'https://1.bp.blogspot.com/-k6qQ-vtW-bU/U4Ase2wznPI/AAAAAAAATcE/Jvy-abW_WSg/s1600/secretos-del-maquillaje-profesional.jpg',
+            'https://hips.hearstapps.com/hmg-prod/images/celebrities-marcas-belleza-1645541606.jpg'
+        ],
+        active: true,
+        categories: ['Moda'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: 'Estudio de Maquillaje de Lujo',
+          postalCode: '15347',
+          dateAndTime: {
+            date: new Date('2023-11-18T20:30:00Z'),
+            time: '7:30 PM',
+          },
+        },
+      },
+      {
+        title: 'Venta de Ropa Vintage',
+        summary: 'Explora una amplia selección de ropa vintage de alta calidad en esta venta especial. Encuentra piezas únicas y con estilo que harán que tu guardarropa sea verdaderamente especial.',
+        price: 75.00,
+        stock: 600,
+        date: new Date('2023-12-18T20:30:00Z'),
+        images: [
+            'https://media.revistavanityfair.es/photos/60e84dea24e5f096406bf4f1/master/w_1600%2Cc_limit/27637.jpg',
+            'https://www.dondeir.com/wp-content/uploads/2017/09/4-tiendas-de-ropa-vintage-en-ciudad-de-mexico-moda-vieja.jpg',
+            'https://www.dondeir.com/wp-content/uploads/2021/04/bazares-segunda-mano.jpg'
+        ],
+        active: true,
+        categories: ['Moda'], 
+        placeData: {
+          country: 'Colombia',
+          city: 'Medellin',
+          direction: 'Mercado Vintage Exclusivo',
+          postalCode: '15329',
+          dateAndTime: {
+            date: new Date('2023-12-18T20:30:00Z'),
+            time: '6:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Conferencia Internacional de Innovación Empresarial.',
+        summary: ' Únete a la Conferencia Internacional de Innovación Empresarial y descubre cómo las empresas líderes están transformando sus operaciones en la era digital. Este evento reunirá a expertos en innovación y emprendimiento para compartir sus ideas y estrategias sobre cómo impulsar el crecimiento y la sostenibilidad de los negocios en un mundo en constante cambio.',
+        price: 85.00,
+        stock: 100,
+        date: new Date('2023-10-18T20:30:00Z'),
+        images: [
+           'https://andicom.co/wp-content/uploads/2023/07/ANDICOM_conferencias-2-1.jpg',
+           'https://lanotaeconomica.com.co/wp-content/uploads/elementor/thumbs/ANDICOM-q6kg1llv6j27tm27nf95r0m63axg445o49a8kudwfw.jpg',
+           'https://andicom.co/wp-content/uploads/2023/09/DSC_0164-1-scaled.jpg' 
+        ],
+        active: true,
+        categories: ['Negocios y Emprendimiento'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'La Plata',
+          direction: 'Innovación Empresarial, Transformación Digital',
+          postalCode: '14498',
+          dateAndTime: {
+            date: new Date('2023-10-18T20:30:00Z'),
+            time: '10:30 AM',
+          },
+        },
+      },
+      {
+        title: 'Foro de Emprendedores Creativos',
+        summary: 'Únete al Foro de Emprendedores Creativos, donde la creatividad y los negocios se fusionan. En este evento único, exploraremos cómo la creatividad puede impulsar la innovación empresarial y la expresión artística. Escucha a emprendedores creativos de renombre, participa en talleres prácticos y conéctate con personas apasionadas por la creatividad y los negocios.',
+        price: 75.00,
+        stock: 600,
+        date: new Date('2023-11-18T20:30:00Z'),
+        images: [
+            'https://www.nicaraguacreativa.com/wp-content/uploads/2020/07/creatividad.jpg',
+            'https://www.eleconomista.com.mx/__export/1660746966335/sites/eleconomista/img/2022/08/17/marketing_digital_0.jpg_1014274486.jpg',
+            'https://elcomercio.pe/resizer/dggR93z0vbdhDfty3HCCqoQkFb0=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7OMJK5BZHRE6NFMZITNHFLCB4I.jpg'
+        ],
+        active: true,
+        categories: ['Negocios y Emprendimiento'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Salta',
+          direction: ' Galería de Arte Imagina',
+          postalCode: '15136',
+          dateAndTime: {
+            date: new Date('2023-11-18T20:30:00Z'),
+            time: '9:45 AM',
+          },
+        },
+      },
+      {
+        title: 'Noche de Comedia en Vivo',
+        summary: 'Únete a nosotros para una noche llena de risas y diversión en nuestra Noche de Comedia en Vivo. Disfruta de un elenco de comediantes profesionales que te harán reír a carcajadas con sus rutinas humorísticas. Este evento es perfecto para relajarse y disfrutar de un buen momento con amigos o en pareja.',
+        price: 65.00,
+        stock: 300,
+        date: new Date('2023-12-18T20:30:00Z'),
+        images: [
+            'https://c8.alamy.com/compes/2ayt74d/microfono-de-comedia-en-escenario-de-espectaculo-de-musica-de-comedia-en-club-con-luces-y-colores-2ayt74d.jpg',
+            'https://media-cdn.tripadvisor.com/media/photo-s/16/8e/bf/97/noches-de-musica-en-vivo.jpg',
+            'https://media-cdn.tripadvisor.com/media/photo-s/16/8e/bf/1d/noches-de-musica-en-vivo.jpg'
+        ],
+        active: true,
+        categories: ['Comedia'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Ciudad de Córdoba',
+          direction: 'Teatro de la Risa',
+          postalCode: '18727',
+          dateAndTime: {
+            date: new Date('2023-12-18T20:30:00Z'),
+            time: '6:30 PM',
+          },
+        },
+      },
+      {
+        title: ' Conferencia Internacional de Ecología y Sostenibilidad Actual',
+        summary: 'Únete a la Conferencia Internacional de Ecología y Sostenibilidad para explorar soluciones innovadoras y prácticas para los desafíos ambientales actuales. Esta conferencia reúne a expertos en ecología, sostenibilidad y conservación para compartir conocimientos y promover la acción hacia un futuro más sostenible y ecológico.',
+        price: 85.00,
+        stock: 700,
+        date: new Date('2023-10-18T20:30:00Z'),
+        images: [
+            'https://e-management.mx/website/wp-content/uploads/2017/11/Qu%C3%A9-se-necesita-para-alcanzar-el-desarrollo-sostenible.jpg',
+            'https://www.un.org/sites/un2.un.org/files/styles/large-article-image-style-16-9/public/newyork_2005_600x400.jpg',
+            'https://www.diariodesevilla.es/2023/02/03/sevilla/aumentar-desarrollo-sostenible-empresas_1762933880_176068558_667x375.jpg'
+        ],
+        active: true,
+        categories: ['Ecología y Sostenibilidad'], 
+        placeData: {
+          country: 'Argentina',
+          city: 'Posadas',
+          direction: '  Ciudad Verde',
+          postalCode: '12046',
+          dateAndTime: {
+            date: new Date('2023-10-18T20:30:00Z'),
+            time: '11:00 AM',
+          },
+        },
+      },
+
+
 
   ];
   

@@ -5,6 +5,7 @@ const categories_router = require('./categories_router');
 const checkout_router = require('./checkout_router');
 const users_router = require('./users_router');
 const google_router = require('./google_router');
+const soft_delete_router = require('./soft_delete_router');
 const tokens_router = require('./tokens_router');
 const router = Router();
 
@@ -15,7 +16,6 @@ router.use('/review', reviews_router);
 router.use('/checkout', checkout_router);
 router.use('/user', users_router);
 router.use('/google', google_router);
-router.use('', tokens_router);
 
 
 router.use((req, res, next) => {
