@@ -1,6 +1,7 @@
 const express = require('express');
 const checkoutRouter = express.Router();
 const { createPayment } = require('../controllers/index');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 checkoutRouter.post('/charge', createPayment);
 
