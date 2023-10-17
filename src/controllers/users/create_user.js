@@ -46,7 +46,8 @@ async function registerUser(req, res) {
       country,
       city,
     });
-
+    await newUser.save();
+    
     if (isServiceProvider) {
       if (!req.body.images || !req.body.location || !req.body.summary) {
         await User.findByIdAndDelete(newUser._id); 
@@ -77,8 +78,7 @@ async function registerUser(req, res) {
       process.env.SECRET_KEY,
       { expiresIn: '1h' }
     );
-
-    // Resto del código sin cambios...
+    
 
     return res.status(201).json({ message: 'Usuario registrado exitosamente', token });
   } catch (error) {
