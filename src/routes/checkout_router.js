@@ -1,6 +1,7 @@
 const express = require('express');
 const checkoutRouter = express.Router();
 const { createPayment } = require('../controllers/index');
+const { Ticket } = require('../db');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 checkoutRouter.post('/charge', createPayment);
@@ -26,5 +27,32 @@ checkoutRouter.post('/stripe-webhook', async (req, res) => {
       res.sendStatus(400);
     }
   });
+
+  checkoutRouter.post('/success', async (req, res) => {
+    const { cartItems,  userId } = req.body; 
+    console.log({ cartItems,  userId })
+  
+    try {
+      const tickets = cartItems.map((item) => {
+        return new Ticket({
+          date: new Date(),
+          serviceProviderId: item.serviceProviderId,
+          eventId: item._id,
+          userId: userId,
+          price: item.price,
+          payed: true,
+          eventName: item.title,
+        });
+      });
+  
+      await Ticket.insertMany(tickets);
+  
+      res.status(200).json({ message: 'Pago registrado exitosamente' });
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  });
+
+  
 
 module.exports = checkoutRouter;
