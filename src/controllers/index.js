@@ -14,6 +14,7 @@ const getUsers = require('../controllers/users/get_users')
 const loginUser = require('../controllers/users/login_user')
 const registerUser = require('../controllers/users/create_user')
 const createPayment = require('../controllers/checkout_controller/checkout')
+const updateUser = require('../controllers/users/put_user')
 
 module.exports = {
     getEvents,
@@ -29,5 +30,6 @@ module.exports = {
     getUsers,
     loginUser,
     registerUser,
-    createPayment
+    createPayment,
+    updateUser
 }
