@@ -20,6 +20,7 @@ const userSchema = new mongoose.Schema({
   cartId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Cart",
+    googleId: String,
   },
 });
 
