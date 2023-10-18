@@ -46,7 +46,8 @@ async function registerUser(req, res) {
       country,
       city,
     });
-
+    await newUser.save();
+    
     if (isServiceProvider) {
       if (!req.body.images || !req.body.location || !req.body.summary) {
         await User.findByIdAndDelete(newUser._id); 
@@ -78,18 +79,7 @@ async function registerUser(req, res) {
       { expiresIn: '1h' }
     );
 
-    const msg = {
-      to: email, 
-      from: 'clickyticketg18pf@gmail.com', 
-      subject: 'Bienvenido a ClickyTicket',
-      text: '¡Gracias por unirte a nuestra aplicación!',
-      html: '<strong>¡Gracias por unirte a nuestra aplicación!</strong>',
-    };
-
-    sgMail.send(msg)
-      .then(() => console.log('Correo electrónico de bienvenida enviado'))
-      .catch((error) => console.error('Error al enviar el correo electrónico de bienvenida', error));
-
+    // Resto del código sin cambios...
 
     return res.status(201).json({ message: 'Usuario registrado exitosamente', token });
   } catch (error) {
