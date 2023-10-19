@@ -1,6 +1,6 @@
 const express = require('express');
 const userRouter = express.Router();
-const { getUsers, registerUser, loginUser, getUsersById} = require('../controllers/index');
+const { getUsers, registerUser, loginUser, getUsersById, updateUser} = require('../controllers/index');
 const {Ticket} = require('../db');
 const { authenticateToken } = require('../middlewares/authMiddleware.js');
 
@@ -24,5 +24,10 @@ userRouter.get('/tickets/:userId', async (req, res) => {
 userRouter.post('/register', registerUser);
 
 userRouter.post('/login', loginUser);
+
+userRouter.put('/:id', updateUser)
+
+
+userRouter.put("/edit/:userId", updateUser);
 
 module.exports = userRouter;

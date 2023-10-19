@@ -22,6 +22,7 @@ router.use('/google', google_router);
 router.use('/softDelete', soft_delete_router);
 router.use('/auth', auth_router)
 router.use('/cloudinary', cloudinary_router);
+router.use('/', soft_delete_router );
 
 
 router.use((req, res, next) => {

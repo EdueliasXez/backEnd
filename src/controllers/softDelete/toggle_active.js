@@ -17,31 +17,17 @@ async function toggleActive(modelName, id, active) {
         throw new Error('Modelo no válido');
     }
 
-    const existingRecord = await Model.findOne({
-      where: {
-        id,
-      },
-    });
+    const existingRecord = await Model.findById(id);
 
     if (!existingRecord) {
       throw new Error('Registro no encontrado'); 
     }
 
-    const updatedRecord = await Model.update(
-      { active },
-      {
-        where: {
-          id,
-        },
-        returning: true,
-      }
-    );
+    existingRecord.active = active;
 
-    if (updatedRecord[0] === 1) {
-      return updatedRecord[1][0]; 
-    } else {
-      throw new Error('No se pudo actualizar el registro');
-    }
+    const updatedRecord = await existingRecord.save();
+
+    return updatedRecord;
   } catch (error) {
     throw error;
   }

@@ -53,6 +53,16 @@ checkoutRouter.post('/stripe-webhook', async (req, res) => {
     }
   });
 
+  checkoutRouter.get("/tickets", async (req, res) => {
+    try {
+      const tickets = await Ticket.find(); 
+  
+      res.status(200).json(tickets);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: "Hubo un error al obtener los tickets" });
+    }
+  });
   
 
 module.exports = checkoutRouter;
