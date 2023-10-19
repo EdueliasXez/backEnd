@@ -18,6 +18,7 @@ const createPayment = require('../controllers/checkout_controller/checkout')
 const toggleActive = require('../controllers/softDelete/toggle_active')
 const getEventsByRating  = require('../controllers/review_controllers/get_events_by_rating')
 // getReviewsByItemId
+const updateUser = require('../controllers/users/put_user')
 
 module.exports = {
     getEvents,
@@ -34,7 +35,5 @@ module.exports = {
     getUsers,
     loginUser,
     registerUser,
-    createPayment,
-    toggleActive ,
-    getEventsByRating 
+    createPayment
 }
