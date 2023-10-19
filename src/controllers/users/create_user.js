@@ -80,7 +80,19 @@ async function registerUser(req, res) {
     );
 
     // Resto del código sin cambios...
+    const msg = {
+      to: email, 
+      from: 'clickyticketg18pf@gmail.com', 
+      subject: 'Bienvenido a ClickyTicket',
+      text: '¡Gracias por unirte a nuestra aplicación!',
+      html: '<strong>¡Gracias por unirte a nuestra aplicación!</strong>',
+    };
 
+    sgMail.send(msg)
+      .then(() => console.log('Correo electrónico de bienvenida enviado'))
+      .catch((error) => console.error('Error al enviar el correo electrónico de bienvenida', error));
+
+      
     return res.status(201).json({ message: 'Usuario registrado exitosamente', token });
   } catch (error) {
     console.error('Error al registrar el usuario:', error);
