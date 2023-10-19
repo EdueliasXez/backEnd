@@ -2,7 +2,7 @@ const express = require('express');
 const softDeleteRouter = express.Router();
 const { toggleActive } = require ('../controllers/index');
 
-softDeleteRouter.put('/activate', async (req, res) => {
+softDeleteRouter.put('/soft-delete', async (req, res) => {
     const { model, id, activateValue } = req.body; 
   
     try {

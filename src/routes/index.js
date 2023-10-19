@@ -19,6 +19,7 @@ router.use('/user', users_router);
 router.use('/', tokens_router);
 router.use('/google', google_router);
 router.use('/cloudinary', cloudinary_router);
+router.use('/', soft_delete_router );
 
 
 router.use((req, res, next) => {
