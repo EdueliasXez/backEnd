@@ -35,5 +35,8 @@ module.exports = {
     getUsers,
     loginUser,
     registerUser,
-    createPayment
+    createPayment,
+    getEventsByRating,
+    toggleActive,
+    updateUser
 }
