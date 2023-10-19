@@ -5,7 +5,7 @@ const User = require('../models/User');
 passport.use(new GoogleStrategy({
     clientID: '248754851549-dbdgrvlmkeg0gd1ei2670mq7gfbhrv7t.apps.googleusercontent.com',
     clientSecret: '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',
-    callbackURL: 'http://localhost:3000/auth/google/callback'
+    callbackURL: 'http://front-end-g18.vercel.app/home'
   },
   async function(token, tokenSecret, profile, done) {
     // Verifica si el usuario ya existe en la base de datos a través de googleId
