@@ -78,7 +78,8 @@ async function registerUser(req, res) {
       process.env.SECRET_KEY,
       { expiresIn: '1h' }
     );
-    
+
+    // Resto del código sin cambios...
 
     return res.status(201).json({ message: 'Usuario registrado exitosamente', token });
   } catch (error) {

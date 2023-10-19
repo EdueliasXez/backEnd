@@ -6,6 +6,7 @@ eventsRouter.get('/', getEvents);
 eventsRouter.get('/rating', getEventsByRating );
 eventsRouter.get('/:id', getEventById);
 eventsRouter.post('/create', createEvent);
+eventsRouter.put('/:id',updateEvent );
 eventsRouter.delete('/:id', removeEvent);
 
 module.exports = eventsRouter;
